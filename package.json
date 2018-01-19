@@ -1,0 +1,22 @@
+{
+  "name": "phina-class-helper",
+  "version": "0.0.1",
+  "private": true,
+  "description": "convert phina-classes and es-classes each other",
+  "main": "build/phina-class-helper.js",
+  "types": "build/phina-class-helper.d.ts",
+  "scripts": {
+    "postinstall": "postinstall-build build",
+    "build": "tsc"
+  },
+  "keywords": ["phina.js"],
+  "repository": "https://github.com/negiwine/phina-class-helper",
+  "author": "negiwine",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "postinstall-build": "^5.0.1"
+  }
+}
