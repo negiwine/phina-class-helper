@@ -8,7 +8,7 @@
 
 export type FakeClassWrapperFP = <T>(_class: T) => T;
 export type FakeClassWrapperTP = <T>(_class: T, _super: any) => T;
-export type Register = <T>(path: string) => { extends: (_super?: any) => (_class: T) => T; };
+export type Register = (path: string) => { extends: (_super?: any) => (_class: any) => any; };
 export type RegisterCreator = (phina: any) => Register;
 
 export const fromPhina: FakeClassWrapperFP = (_class: any) => {
