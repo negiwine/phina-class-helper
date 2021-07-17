@@ -1,5 +1,9 @@
 # phina-class-helper
 
+## 重要
+このリポジトリは非推奨であり、既にメンテナンスされていません。
+phina.js で class 構文を利用したい場合、 [phina-patch-es-classes-support](https://github.com/negiwine/phina-patch-es-classes-support) か、 [phina.jsのES Modules対応版](https://github.com/pentamania/phina.js/tree/esm-support_alpha) の利用を検討してください。
+
 ## このリポジトリについて
 phina.jsのクラスとES2015のクラスを相互変換する、非公式のユーティリティです。
 テストなどはしていないので信頼性は非常に低いです。
