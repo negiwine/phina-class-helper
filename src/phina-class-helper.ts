@@ -14,8 +14,6 @@ export type RegisterCreator = (phina: any) => Register;
 export const fromPhina: FakeClassWrapperFP = (_class: any) => {
 
     const wrapper = function(){
-        this.__counter = this.__counter || 0;
-        this.__counter++;
         _class.prototype.init.apply(this, arguments);
     };
     wrapper.prototype = Object.create(_class.prototype);
